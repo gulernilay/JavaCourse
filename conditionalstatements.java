@@ -2,10 +2,10 @@
 {if-else if -else}  structure
 switch case structure 
 */
-import java.util.Scanner
+import java.util.*;
 
 
-class statement1 {  //if -else usage 
+class Statement1 {  //if -else usage 
   public static void main(String[] args) {
          int a = 10, b = 20, c = 30;
 
@@ -18,6 +18,16 @@ class statement1 {  //if -else usage
         }
     }
 }
+
+if (condition1)  // nested if 
+{
+   // Executes when condition1 is true
+   if (condition2) 
+   {
+      // Executes when condition2 is true
+   }
+}
+
 
 
 class Statement2{
@@ -52,7 +62,25 @@ class Statement2{
         }
     }
 
-
-
-
 }
+
+/*
+Java supports 3 jumps : break,continue,return 
+-break : to terminate a switch statement, to exit a loop
+*/
+ 
+class Return {
+    public static void main(String args[])
+    {
+        boolean t = true;
+        System.out.println("Before the return.");
+ 
+        if (t)
+            return;
+ 
+        // Compiler will bypass every statement
+        // after return
+        System.out.println("This won't execute.");
+    }
+}
+
