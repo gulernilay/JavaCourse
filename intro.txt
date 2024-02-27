@@ -1,0 +1,42 @@
+Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), and other tools needed in Java development. 
+
+The Java Runtime Environment provides the minimum requirements for executing a Java application; it consists of the Java Virtual Machine (JVM), core classes, and supporting files. 
+
+JDK (Java Development Kit):
+
+The complete Java software development kit.
+Includes JRE (Java Runtime Environment) and development tools like compilers (javac), debuggers, and documentation tools.
+Used for developing, compiling, and running Java applications.
+JRE (Java Runtime Environment):
+
+The runtime environment that provides the libraries, the Java Virtual Machine (JVM), and other components to run Java applications.
+Does not include development tools like compilers or debuggers.
+Used by users who only need to run Java applications and not develop them.
+JVM (Java Virtual Machine):
+
+The virtual machine that runs Java bytecode.
+Part of both JDK and JRE.
+Responsible for converting bytecode into machine code and executing it.
+Platform-independent, enabling Java's "write once, run anywhere" (WORA) capability.
+
+
+Byte Code  vs Machine Code : 
+
+
+ 01.	Byte Code consisting of binary, hexadecimal, macro instructions like (new, add, swap, etc) and it is not directly understandable by the CPU. It is designed for efficient execution by software such as a virtual machine.intermediate-level	 
+      Machine code consisting of binary instructions that are directly understandable by the CPU.
+ 02.	 Byte code is considered as the intermediate-level code.	 
+      Machine Code is considered as the low-level code.
+ 03.	 Byte code is a non-runnable code generated after compilation of source code and it relies on an interpreter to get executed.	 
+ Machine code is a set of instructions in machine language or in binary format and it is directly executed by CPU.
+ 04.	 Byte code is executed by the virtual machine then the Central Processing Unit.	 
+ Machine code is not executed by a virtual machine it is directly executed by CPU.
+ 05. 	 Byte code is less specific towards machine than the machine code.	 
+ Machine code is more specific towards machine than the byte code.
+ 06.	 It is platform-independent as it is dependent on the virtual machine and the system having a virtual machine can be executed irrespective of the platform.	  It is not platform independent because the object code of one platform can not be run on the different Operating System. Object varies depending upon system architecture and native instructions associated with the machine.
+ 07.	 All the source code need not be converted into byte code for execution by CPU. Some source code written by any specific high-level language is converted into byte code then byte code to object code for execution by CPU.	All the source code must be converted into machine code before it is executed by the CPU.
+
+
+
+
+
