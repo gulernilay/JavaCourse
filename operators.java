@@ -92,7 +92,7 @@ class GFG {
 
 
 //instanceof operator : used to test if an object is an instance of a class, a subclass, or an interface
-class operators {
+public class Operators {
     public static void main(String[] args)
     {
  

@@ -5,6 +5,9 @@ Non-Primitive Data Type or Object Data type or Reference Data Type : Interface ,
 
 */
 
+
+
+
 boolean isJavaFun = true; // true or false
 byte age=30; // Stores 8-bit integers (-128 to 127)
 short year = 2024;  // Stores 16-bit integers (-32,768 to 32,767).
@@ -52,7 +55,7 @@ class Labrador extends Dog {
         System.out.println("Labrador uyuyor.");
     }
 }
-public class Main {
+public class DataTypes {
     public static void main(String[] args) {
         Labrador labrador = new Labrador();
         labrador.eat();   // "Köpek yemek yiyor." çıktısını verir

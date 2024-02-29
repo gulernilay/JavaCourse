@@ -5,7 +5,7 @@ switch case structure
 import java.util.*;
 
 
-class Statement1 {  //if -else usage 
+public class ConditionalStatements {  //if -else usage 
   public static void main(String[] args) {
          int a = 10, b = 20, c = 30;
 

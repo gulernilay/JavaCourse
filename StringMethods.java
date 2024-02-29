@@ -5,7 +5,7 @@ String :
 -A string acts the same as an array of characters
 
 */
-public class string {
+public class StringMethods {
     public static void main(String[] args) {
 
         String mesaj ="Hava çok güzel";
@@ -35,6 +35,12 @@ public class string {
         }
         System.out.println(mesaj.toLowerCase()); // database search operations
         System.out.println(mesaj.toUpperCase());
+        String word1 = "Learn Share Learn";
+        String word2 = word1.trim(); // returns “Learn Share Learn”
+
+        String s1="geeksforgeeks";
+        String s2="geeks";
+        s1.contains(s2) // return true
 
 
 

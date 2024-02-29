@@ -5,6 +5,9 @@ Loops:
 3- Do -While
 */
 
+public class Loops{
+
+
 
 // for usage 
  int sum = 0;
@@ -122,3 +125,4 @@ public static void main(String[] args)
         System.out.println("Program executed successfully");
     }      // output: 6.0 
 
+}
