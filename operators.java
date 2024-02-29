@@ -102,7 +102,7 @@ class operators {
         // As obj is of type person, it is not an
         // instance of Boy or interface
         System.out.println("obj1 instanceof Person: "
-                           + (obj1 instanceof Person));
+                           + (obj1 instanceof Person));   // ob1 hem Person hem de super classın bir nesnesidir!!! 
         System.out.println("obj1 instanceof Boy: "
                            + (obj1 instanceof Boy));
         System.out.println("obj1 instanceof MyInterface: "

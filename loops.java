@@ -37,13 +37,28 @@ do
 
 //infinite for loop : 
 for (;;) {}
-
-//infinite while loop:
-while (true){ 
-  // statement 
+for(;;){
+    System.out.println("Bu bir sonsuz döngüdür.");
+    System.out.println("Bir eleman gir ");
+    int a= x.nextInt();
+    if(a==6){
+        System.exit(1);
+    }
 }
 
-//nested loopS:
+
+//infinite while loop:
+while (true) {  // infinite loop  - bir kod sürekli olarak uygulamanın çalışmasını sağlar  ama bir noktada uygulama kesilicek.
+
+    System.out.println("Bu bir sonsuz döngüdür.");
+    System.out.println("Bir eleman gir ");
+    int a= x.nextInt();
+    if(a==6){
+        break;
+    }
+
+        }
+//nested loopS:  Desen çizimi , mulidimensional arrays, 
 for(int i = 0; i < 3; i++){
     for(int j = 0; j < 2; j++){
             System.out.println(i);

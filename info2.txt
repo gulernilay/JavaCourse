@@ -154,7 +154,13 @@ Parsed Date : Sat Feb 18 00:00:00 UTC 1995
 
 
 
-
+!!!!!!!!! nextInt() metodu bir tamsayı aldıktan sonra satır sonu karakterini (newline) tüketmez. Bu, nextLine() metodunun çağrıldığında sadece satır sonu karakterini okuyup boş bir metin döndürmesine neden olur.
+int pop ;
+System.out.print(pop=x.nextInt());
+x.nextLine();
+String word;
+System.out.println(word =x.nextLine());
+x.close();
 
 
 

@@ -57,7 +57,9 @@ class GFG {
 }
 
 
-// Static Variables : 
+// Static Variables :  1-Mainde ağırabilmek için , 1-tüm objeler için aynı değere ahip bir attribute, 
+
+//static methodlar ancak mainde bir obje üzerinden çağırılabilirler. :  obj1.method1();
 import java.io.*;
  
 class GFG {
