@@ -12,6 +12,9 @@ class Parent {
     {
         System.out.println("From parent m2()");
     }
+    // Can't be overridden
+    final void show() {}
+
 }
  
 class Child extends Parent {
@@ -28,6 +31,8 @@ class Child extends Parent {
     {
         System.out.println("From child m2()");
     }
+    // This would produce error
+    void show() {}
 }
  
 // Driver class
