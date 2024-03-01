@@ -91,11 +91,11 @@ public class InputOutput{
         // print floating value
         System.out.println("Entered FloatValue : " + f);
         // Character input
-        char gender = sc.next().charAt(0);
+        char gender = scn.next().charAt(0);
       
     }
 }
-}
+
 
 /*
 // Working program using Scanner 
@@ -149,7 +149,7 @@ public class Main {
 
 
 
-
+*/
 
 
 
