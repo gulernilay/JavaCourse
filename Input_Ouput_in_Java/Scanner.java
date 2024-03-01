@@ -60,8 +60,8 @@ The reading methods are not synchronized
 */
 
 import java.util.Scanner;
-
-public class InputOutput{
+/*
+public class Scanner{
    public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);

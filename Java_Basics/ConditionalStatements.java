@@ -18,7 +18,7 @@ public class ConditionalStatements {  //if -else usage
         }
     }
 }
-
+/*
 if (condition1)  // nested if 
 {
    // Executes when condition1 is true
@@ -28,7 +28,7 @@ if (condition1)  // nested if
    }
 }
 
-
+*/
 
 class Statement2{
     public static void main(String[] args) {

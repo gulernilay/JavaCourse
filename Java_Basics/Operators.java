@@ -12,7 +12,7 @@ instance of operator
 
 //arithmetic operators:  * , / , % , + , -
 import java.io.*;
- 
+ /*
 // Drive Class
 class GFG {
       // Main Function
@@ -130,7 +130,7 @@ class Boy extends Person implements MyInterface {
 interface MyInterface {
 }
 
-
+*/
 
 
 

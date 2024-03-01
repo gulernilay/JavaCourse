@@ -11,7 +11,7 @@ class Parent2 { // Parent Class
         System.out.println("Parent2");
     }
 }
-
+/*
 class MultipleInheritance extends Parent1, Parent2 { // subclass of 2 parent class is not allowed
 
     // Main driver method
@@ -23,7 +23,7 @@ class MultipleInheritance extends Parent1, Parent2 { // subclass of 2 parent cla
 }
 
 
-/*
+
 
 Multiple Inheritance is a feature of an object-oriented concept, where a class can inherit properties of more than one parent class.
 The problem occurs when there exist methods with the same signature in both the superclasses and subclass.

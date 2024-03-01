@@ -1,5 +1,7 @@
-int age=20 ; // variable initialization
-/*
+
+
+/*int age=20 ; // variable initialization
+
 Types of Variables in Java : 
 Local Variables : The scope of these variables exists only within the block ,These variables are created when the block is entered, or the function is called , initialization of local variable is mandatory and not need to ue access modifiers.
 
@@ -12,7 +14,7 @@ Hafıza Tasarrufu: Her nesne için ayrı bir kopya oluşturmak yerine, static de
 Sınıf Düzeyinde Bilgi Paylaşımı: static değişkenler, sınıfın tüm nesneleri arasında ortak bilgileri saklamak ve paylaşmak için kullanılır.
 obje yaratmana gerek kalmıyor.
 */
-
+/*
 //Local Variable: 
 class GFG {
     public static void main(String[] args)
@@ -122,7 +124,7 @@ Variables declared inside a method have method level scope and can’t be access
 
 
 3-Loop Variable: A variable declared inside pair of brackets “{” and “}” in a method has scope within the brackets only.
-*/
+
 
 
 //Local Variables:
@@ -152,3 +154,4 @@ class Test
 
 
 
+*/

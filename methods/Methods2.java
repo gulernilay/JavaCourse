@@ -1,3 +1,5 @@
+/*
+
 abstract class AbstractMethods {
     // Abstract metodu: Bu metodun gövdesi alt sınıflarda tanımlanmalıdır
     public abstract void displayMessage();
@@ -54,3 +56,4 @@ public class Methods extends AbstractMethods {
 
     }
 }
+*/

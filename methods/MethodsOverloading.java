@@ -5,8 +5,8 @@ Changing the Number of Parameters.
 Changing Data Types of the Arguments.
 Changing the Order of the Parameters of Methods
 
-*/
-public class Sum {  
+
+class Sum {
     // Overloaded sum(). This sum takes two int parameters 
     public int sum(int x, int y) { return (x + y); } 
   
@@ -23,3 +23,4 @@ public class Sum {
         System.out.println(s.sum(10.5, 20.5)); 
     } 
 }
+*/

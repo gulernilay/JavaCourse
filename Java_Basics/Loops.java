@@ -8,7 +8,7 @@ Loops:
 public class Loops{
 
 
-
+/*
 // for usage 
  int sum = 0;
 
@@ -124,5 +124,8 @@ public static void main(String[] args)
         // successful execution of program
         System.out.println("Program executed successfully");
     }      // output: 6.0 
+
+
+*/
 
 }
