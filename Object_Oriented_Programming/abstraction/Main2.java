@@ -11,6 +11,7 @@ public class Main2  {  //Driver Class
 
 
     }
+
 }
 
 
@@ -83,6 +84,18 @@ abstract classes can implement interfaces ,the abstract class must provide concr
 abstract methods: no implementation in super-class , subclass must override them
 !any class hat contains abstract methods shoul be abstract class
  -abstract static, abstract private ......
+
+
+abstract classes can creatable without abstract methods
+final abstract method olamaz
+statik methodlar abstract class içinde tanımlanabilir.
+abstract metot içeren sınıflar , bu sınıflar kesinlikle abstract class olmalıdır.
+
+Elements abstract class can have data member,abstract method,method body , constructor, main() method
+
+
+
+
 
 
 

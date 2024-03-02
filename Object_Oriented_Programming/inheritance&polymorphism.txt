@@ -1,0 +1,34 @@
+Inheritance is one in which a new class is created that inherits the properties of the already exist class. It supports the concept of code reusability and reduces the length of the code in object-oriented programming.
+
+Types of Inheritance are:
+Single inheritance
+Multi-level inheritance
+Multiple inheritances
+Hybrid inheritance
+Hierarchical inheritance
+
+
+Polymorphism:
+Polymorphism is that in which we can perform a task in multiple forms or ways. It is applied to the functions or methods. Polymorphism allows the object to decide which form of the function to implement at compile-time as well as run-time.
+Types of Polymorphism are:
+    Compile-time polymorphism (Method overloading)
+    Run-time polymorphism (Method Overriding)
+
+
+
+Inheritance	Polymorphism
+1.	Inheritance is one in which a new class is created (derived class) that inherits the features from the already existing class(Base class).	Whereas polymorphism is that which can be defined in multiple forms.
+2.	It is basically applied to classes.	Whereas it is basically applied to functions or methods.
+3.	Inheritance supports the concept of reusability and reduces code length in object-oriented programming.	Polymorphism allows the object to decide which form of the function to implement at compile-time (overloading) as well as run-time (overriding).
+4.	Inheritance can be single, hybrid, multiple, hierarchical and multilevel inheritance.	Whereas it can be compiled-time polymorphism (overload) as well as run-time polymorphism (overriding).
+5.	It is used in pattern designing.	While it is also used in pattern designing.
+6.
+Example :
+
+The class bike can be inherit from the class of two-wheel vehicles, which is turn could be a subclass of vehicles.
+
+Example :
+
+The class bike can have method name set_color(), which changes the bike’s color based on the name of color you have entered.
+
+
