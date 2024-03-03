@@ -49,7 +49,7 @@ final class Immutable {
 
 /*
 Final keyword is used for variables,classes,methods which can't be modified once it is initialized
-A final class cannot be subclassed.
-Final variables can't be changed
-Final methods can't be overriden.
+A final class cannot be subclassed. = prevetn inheritance
+Final variables can't be changed   = constant variable
+Final methods can't be overriden.=
  */
