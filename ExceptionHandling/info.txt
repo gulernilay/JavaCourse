@@ -1,0 +1,6 @@
+Exception  ve error Throwable nesnesinden inherit edilirler.
+Exception:Yazımız kodlara yönelik hatalardır. / Kodlarımızla kontrol altında tutabiliyoruz.
+  Runtime exception(NullPointerException, arithmetic, classcast exception,indexoutofboundsexception), sql exception, IO EXCEPTİON , AWT Exception
+  Tüm exceptionlar exception classından inherit edilir.
+  Tüm exceptionlar inheritance yapısına sahiptir.
+Error: VirtualMachineEError, IOError, AssertionError/Kodlarla müdahale edemeyeceğimiz alan /
