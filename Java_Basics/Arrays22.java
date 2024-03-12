@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Arrays {
+public class Arrays22 {
     public static void main(String[] args) {
         //Array Declaration Types:
 
@@ -33,13 +33,15 @@ public class Arrays {
         numbers3[2][0]=67; // add elements to array
         numbers3[2][1]=35;
         
-
+        /*
         for (int i =0;i<=2;i++){
-            for (int i =0;i<=1;i++){
+            for (int j =0;j<=1;j++){
                 System.out.println(numbers[i][j]);
 
             }
         }
+        */
+
         
         // Different types of variables
         Object[] mixedArray = new Object[5];

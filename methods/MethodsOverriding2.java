@@ -1,6 +1,6 @@
 // A Simple Java program to demonstrate
 // Overriding and Access-Modifiers
- 
+ /*
 class Parent {
     // private methods are not overridden
     private void m1()
@@ -45,3 +45,4 @@ class Main {
         obj2.m2();
     }
 }
+*/
