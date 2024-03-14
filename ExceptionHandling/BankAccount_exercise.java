@@ -2,6 +2,7 @@ package ExceptionHandling;
 
 public class BankAccount_exercise {
     public static void main(String[] args) {
+
      BankAccount a1=new BankAccount(1000);
         try {
             a1.deposit(500);
@@ -28,8 +29,6 @@ class InsufficientFundsException extends Exception {
         super(message);
     }
 }
-
-
 class BankAccount{
     public double balance ;
     public BankAccount(double _balance){
