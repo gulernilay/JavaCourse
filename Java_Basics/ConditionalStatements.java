@@ -1,9 +1,4 @@
-/*Conditional Statements:
-{if-else if -else}  structure
-switch case structure 
-*/
-import java.util.*;
-
+package Java_Basics;
 
 public class ConditionalStatements {  //if -else usage 
   public static void main(String[] args) {
@@ -18,16 +13,13 @@ public class ConditionalStatements {  //if -else usage
         }
     }
 }
-/*
-if (condition1)  // nested if 
-{
+/* Nested if structure:
+if (condition1){
    // Executes when condition1 is true
-   if (condition2) 
-   {
+   if (condition2) {
       // Executes when condition2 is true
    }
 }
-
 */
 
 class Statement2{
@@ -67,6 +59,9 @@ class Statement2{
 /*
 Java supports 3 jumps : break,continue,return 
 -break : to terminate a switch statement, to exit a loop
+
+Conditional Statements: if-else if -else structure   ,  switch case
+
 */
  
 class Return {
@@ -83,4 +78,5 @@ class Return {
         System.out.println("This won't execute.");
     }
 }
+
 
