@@ -8,7 +8,9 @@ class Vehicle {
     void message() {
         System.out.println("This is vehicle class\n");
     }
-    Vehicle(){ System.out.println("Person class Constructor"); }
+    Vehicle(){
+        System.out.println("Person class Constructor");
+    }
 
 }
 

@@ -1,13 +1,4 @@
-package Object_Oriented_Programming.keywords;
-import java.util.*;
 
-public class AllKeywords {
-
-}
-
-
-
-/*
 1- abstract - method or class
 2- enum :	A Java keyword is used to declare an enumerated type. Enumerations extend the base class.
 class Counter {

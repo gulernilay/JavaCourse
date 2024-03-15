@@ -9,7 +9,7 @@ class Main2{
     private int geekRoll;
     private int geekAge;
 
-    // etter and getter methods
+    // setter and getter methods
     public int getAge() { return geekAge; }
     public String getName() { return geekName; }
     public int getRoll() { return geekRoll; }

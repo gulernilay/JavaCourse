@@ -25,6 +25,29 @@ class A {
     }
 };
 
+// Soyut bir üst sınıf tanımlıyoruz.
+abstract class Shape {
+    // Soyut bir metod tanımlıyoruz.
+    abstract void draw();
+}
+
+// Shape sınıfından türeyen bir alt sınıf.
+class Circle extends Shape {
+    // Üst sınıfın soyut metodunu uyguluyoruz.
+    void draw() {
+        System.out.println("Çember çiziliyor.");
+    }
+}
+
+// Shape sınıfından türeyen bir başka alt sınıf.
+class Square extends Shape {
+    // Üst sınıfın soyut metodunu uyguluyoruz.
+    void draw() {
+        System.out.println("Kare çiziliyor.");
+    }
+}
+
+
 class B extends A {
     public void print()
     {
@@ -46,6 +69,23 @@ class B extends A {
 
         // Method overriding (Run-time polymorphism) =signature same
         b1.print();
+
+
+        // Shape tipinde bir dizi oluşturuyoruz.
+        Shape[] shapes = new Shape[2];
+
+        // Diziye farklı alt sınıf türünden nesneler ekliyoruz.
+        shapes[0] = new Circle();
+        shapes[1] = new Square();
+
+        // Polimorfizmi kullanarak her şekli çiziyoruz.
+        for (Shape shape : shapes) {
+            shape.draw();
+        }
+
+
+
+
     }
 }
 
@@ -62,6 +102,21 @@ It is achieved by function overloading and operator overloading.	It is achieved 
 It provides fast execution because the method that needs to be executed is known early at the compile time.	It provides slow execution as compare to early binding because the method that needs to be executed is known at the runtime.
 Compile time polymorphism is less flexible as all things execute at compile time.	Run time polymorphism is more flexible as all things execute at run time.
 Inheritance is not involved. 	Inheritance is involved.
+
+
+
+
+Polimorfizm iki temel şekilde gerçekleştirilebilir:
+
+Ad Hoc Polimorfizm: Aynı fonksiyonun farklı veri tipleri için ayrı ayrı tanımlanmasıdır. Bu tür polimorfizm genellikle aşırı yükleme (overloading) ve şablonlar (templates) ile sağlanır.
+
+Alt Sınıf Polimorfizmi (Soyut Sınıf Polimorfizmi): Bir üst sınıfın metodunun alt sınıflar tarafından farklı şekillerde uygulanmasıdır. Bu tür polimorfizm genellikle soyut sınıflar (abstract classes) ve arayüzler (interfaces) ile sağlanır.
+
+
+
+
+
+
 
 
 

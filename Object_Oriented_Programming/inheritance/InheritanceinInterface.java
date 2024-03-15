@@ -1,7 +1,7 @@
 package Object_Oriented_Programming.inheritance;
 import java.io.*;
 
-interface intfA {
+interface intfA { //no instance variable , method body
     void geekName();
 }
 
@@ -11,6 +11,8 @@ interface intfB extends intfA {
 interface intfC extends intfA, intfB {  // extends multiple interfaces
     void geekBranch();
 }
+
+
 
 
 // class implements both interfaces and provides

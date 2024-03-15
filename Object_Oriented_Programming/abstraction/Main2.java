@@ -89,16 +89,8 @@ abstract methods: no implementation in super-class , subclass must override them
 abstract classes can creatable without abstract methods
 final abstract method olamaz
 statik methodlar abstract class içinde tanımlanabilir.
-abstract metot içeren sınıflar , bu sınıflar kesinlikle abstract class olmalıdır.
 
 Elements abstract class can have data member,abstract method,method body , constructor, main() method
-
-
-
-
-
-
-
 
 final keyword: prevents overriding
  */

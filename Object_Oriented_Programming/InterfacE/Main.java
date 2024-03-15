@@ -69,7 +69,8 @@ an interface can have methods and variables, but the methods declared in the int
 Interfaces specify what a class must do and not how. It is the blueprint of the class
 If a class implements an interface and does not provide method bodies for all functions specified in the interface, then the class must be declared abstract.
 
-
+Class B implements interface C == multiple inheritance is not supported by classes.
+interface C extends interface a ,interface D ==multiple inheritance is supported bw interfaces
 
 A functional interface is an interface that contains only one abstract method. They can have only one functionality to exhibit.Runnable, ActionListener, and Comparable are some of the examples of functional interfaces.
 In Functional interfaces, there is no need to use the abstract keyword as it is optional to use the abstract keyword because, by default, the method defined inside the interface is abstract only. We can also call Lambda expressions as the instance of functional interface.

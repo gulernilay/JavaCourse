@@ -21,11 +21,21 @@ class Dog extends Animal{
     void makeSound() {
         System.out.println("Bark");
     }
+
+    @Override
+    void sleep() {
+        super.sleep();
+    }
 }
 class Cat extends Animal {
     // Soyut metodun somutlaştırılması
     void makeSound() {
         System.out.println("Meow");
+    }
+
+    @Override
+    void sleep() {
+        super.sleep();
     }
 }
 
