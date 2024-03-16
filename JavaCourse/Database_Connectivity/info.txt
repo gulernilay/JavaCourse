@@ -1,0 +1,4 @@
+/*
+Java application uses JDBC library to get connection different types of database. JDBC uses different types of servesrs(Oracle,Mysql,SQL Server) to connect appropriate database management system
+
+*/

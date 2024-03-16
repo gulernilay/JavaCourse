@@ -1,0 +1,69 @@
+Abstract class and interface are both used to define contracts in object-oriented programming, but there are some key differences between them.
+
+Difference between abstract class and interface:-
+
+Definition: An abstract class is a class that cannot be instantiated and can contain both abstract and non-abstract methods. An interface, on the other hand, is a contract that specifies a set of methods that a class must implement.
+
+Method implementation: In an abstract class, some methods can be implemented, while others are left abstract, meaning that they have no implementation and must be overridden by concrete subclasses. In contrast, all methods in an interface are by default abstract and must be implemented by any class that implements the interface.
+
+Inheritance: A class can inherit from only one abstract class, but it can implement multiple interfaces. This is because an abstract class represents a type of object, while an interface represents a set of behaviors.
+
+Access modifiers: Abstract classes can have access modifiers such as public, protected, and private for their methods and properties, while interfaces can only have public access.
+
+Variables: An abstract class can have member variables, while an interface cannot.
+
+In summary, abstract classes are used to provide a base class for concrete subclasses to inherit from, while interfaces are used to define a set of methods that a class must implement. Abstract classes can have implemented and abstract methods, while interfaces can only have abstract methods. Classes can inherit from only one abstract class, but can implement multiple interfaces.
+
+As we know that abstraction refers to hiding the internal implementation of the feature and only showing the functionality to the users. i.e. showing only the required features, and hiding how those features are implemented behind the scene. Whereas, an Interface is another way to achieve abstraction in java. Both abstract class and interface are used for abstraction, henceforth Interface and Abstract Class are required prerequisites.
+
+Abstract class vs Interface
+Type of methods: Interface can have only abstract methods. Whereas, an abstract class can have abstract method and concrete methods. From Java 8, it can have default and static methods also. From Java 9, it can have private concrete methods as well.
+Note : Concrete methods are those methods which has their complete definition but they can also be overriden in the inherited class. However, if we make the concrete method as “FINAL” it cannot be overrided in the inherited class because declaring a method as final means  – its implementation is complete.
+Final Variables: Variables declared in a Java interface are by default final. An abstract class can contain non-final variables.
+Type of variables: Abstract class can have final, non-final, static and non-static variables. The interface has only static and final variables.
+Implementation: Abstract class can provide the implementation of the interface. Interface can’t provide the implementation of an abstract class.
+Inheritance vs Abstraction: A Java interface can be implemented using the keyword “implements” and an abstract class can be extended using the keyword “extends”.
+Multiple implementations: An interface can extend one or more Java interfaces; an abstract class can extend another Java class and implement multiple Java interfaces.
+Multiple Inheritance:  Multiple inheritance can be partially achieved by the use of interfaces , whereas the same can’t be done by the use of abstract classes. Because in Java, one class can implement multiple Interfaces, but one class cannot extend from multiple other classes because that’s just not possible in java as that would lead to the diamond problem.
+Accessibility of Data Members: Members(variables) of a Java interface are final by default. A Java abstract class can have class members like private, protected, etc.
+Features of abstract class:-
+
+An abstract class is a special type of class in object-oriented programming that cannot be instantiated directly. Instead, it serves as a blueprint or template for other classes to be derived from. Some of the key features of an abstract class include:
+Cannot be instantiated: Abstract classes cannot be directly instantiated, which means you cannot create objects of an abstract class.
+Contains at least one pure virtual function: Abstract classes must contain at least one pure virtual function, which means that the function has no implementation and must be implemented by any derived classes.
+Can contain both abstract and non-abstract methods: Abstract classes can have both abstract and non-abstract methods. Non-abstract methods have a complete implementation and can be called directly.
+Can have constructors and destructors: Abstract classes can have constructors and destructors like any other class.
+Can have member variables: Abstract classes can have member variables, which are variables that belong to an object of the class.
+Can be used as a base class: Abstract classes can be used as a base class for other classes, which means that they can be inherited by other classes.
+Overall, abstract classes are used to define a common interface or behavior that can be shared by multiple related classes, but with specific implementations in each derived class.
+
+
+Interface:
+Features of interface:
+
+Defines a set of methods and properties: An interface defines a set of methods and properties that must be implemented by any class or structure that implements the interface.
+Provides a common protocol: Interfaces provide a common protocol that allows different software components to communicate with each other.
+Supports polymorphism: An interface can be used to achieve polymorphism, which means that objects of different classes can be treated as if they belong to the same type, as long as they implement the same interface.
+Enables separation of concerns: Interfaces enable separation of concerns, which means that different parts of a software system can be developed independently of each other, as long as they adhere to the interface specifications.
+Improves code reusability: Interfaces improve code reusability by allowing different software components to reuse the same code base, as long as they implement the same interface.
+Enforces design patterns: Interfaces can be used to enforce design patterns, such as the Adapter pattern, by requiring that certain methods or properties be implemented by the implementing classes.
+Facilitates testing: Interfaces facilitate testing by allowing software components to be tested independently of each other, using mock objects that implement the interface.
+
+
+
+When to use what?
+Consider using abstract classes if any of these statements apply to your situation:
+
+In the Java application, there are some related classes that need to share some lines of code then you can put these lines of code within the abstract class and this abstract class should be extended by all these related classes.
+You can define the non-static or non-final field(s) in the abstract class so that via a method you can access and modify the state of the object to which they belong.
+You can expect that the classes that extend an abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).
+Consider using interfaces if any of these statements apply to your situation:
+
+It is a total abstraction, all methods declared within an interface must be implemented by the class(es) that implements this interface.
+A class can implement more than one interface. It is called multiple inheritances.
+You want to specify the behavior of a particular data type but are not concerned about who implements its behavior.
+
+
+
+
+

@@ -1,0 +1,32 @@
+Java'nın bellek yönetimi, Java Sanal Makinesi (JVM) tarafından otomatik olarak gerçekleştirilir ve genellikle iki ana bölüme ayrılır: Heap alanı ve Stack alanı.
+Heap Alanı:
+
+Heap alanı, Java'da nesnelerin ve dizilerin dinamik olarak ayrıldığı yerdir. Yeni bir nesne oluşturulduğunda, bu nesne heap alanında saklanır.
+Heap alanı, genç nesil (Young Generation), yaşlı nesil (Old Generation) ve kalıcı nesil (Permanent Generation) olmak üzere üç bölüme ayrılır:
+Genç Nesil: Yeni oluşturulan nesneler burada saklanır. Genç nesil, Eden alanı ve iki Survivor alanından (S0 ve S1) oluşur. Çöp toplama (Garbage Collection) işlemi genellikle genç nesil üzerinde gerçekleştirilir ve bu işlem "Minor GC" olarak adlandırılır.
+Yaşlı Nesil: Genç nesil alanında bir süre yaşayan ve hayatta kalan nesneler yaşlı nesil alanına taşınır. Çöp toplama işlemi yaşlı nesil üzerinde daha az sıklıkla gerçekleştirilir ve bu işlem "Major GC" veya "Full GC" olarak adlandırılır.
+Kalıcı Nesil (Java 8'den itibaren Metaspace olarak adlandırılır): Sınıf tanımları ve metodlar gibi JVM tarafından kullanılan meta veriler burada saklanır.
+Stack Alanı:
+
+Stack alanı, metod çağrıları ve yerel değişkenler için kullanılır. Her thread'in kendi stack alanı vardır.
+Bir metod çağrıldığında, bir stack çerçevesi (stack frame) oluşturulur ve bu çerçeve, metodun parametreleri, yerel değişkenleri ve ara sonuçları içerir.
+Metod tamamlandığında, stack çerçevesi stack'ten kaldırılır ve metodun çağrıldığı yere dönülür.
+Çöp Toplama (Garbage Collection):
+
+Çöp Toplama (Garbage Collection):
+
+Java'da çöp toplama işlemi, kullanılmayan nesneleri bellekten otomatik olarak temizleyen bir süreçtir. Bu işlem, JVM tarafından periyodik olarak gerçekleştirilir.
+Bir nesneye hiçbir referans kalmadığında, bu nesne çöp olarak kabul edilir ve çöp toplama işlemi sırasında bellekten temizlenebilir.
+Java'da çöp toplama işlemi otomatiktir, ancak System.gc() metodunu çağırarak çöp toplama işlemini manuel olarak tetiklemek mümkündür. Ancak bu, çöp toplamanın hemen gerçekleşeceği anlamına gelmez.
+Java'nın bellek yönetimi, geliştiricilere bellek yönetimi konusunda büyük kolaylık sağlar, ancak yine de bellek sızıntıları (memory leaks) ve diğer bellek sorunlarına dikkat etmek önemlidir.
+
+Neden Java Bellek Yönetimi Öğrenilmeli?
+Hepimiz biliyoruz ki Java kendisi belleği yönetir ve programcının açık müdahalesine ihtiyaç duymaz. Çöp toplayıcı, kullanılmayan alanın temizlendiğinden ve gereksiz olduğunda belleğin serbest bırakılabileceğinden kendiliğinden emin olur. Peki, programcının rolü nedir ve bir programcı neden Java Bellek Yönetimi hakkında bilgi sahibi olmalıdır?
+Bir programcı olarak, nesneleri yok etme gibi sorunlarla uğraşmanıza gerek yoktur, tüm krediler çöp toplayıcıya aittir. Ancak otomatik çöp toplama her şeyi garanti etmez. Bellek yönetiminin nasıl çalıştığını bilmezsek, sıklıkla JVM (Java Sanal Makinesi) tarafından yönetilmeyen şeylerin ortasında buluruz kendimizi. Otomatik çöp toplama için uygun olmayan bazı nesneler vardır. Bu nedenle bellek yönetimini bilmek önemlidir çünkü bu, programcının çökmez veya çökerse nasıl hata ayıklanacağını veya çökmelerin nasıl üstesinden gelineceğini bileceği yüksek performanslı programlar yazmasına fayda sağlayacaktır.
+
+Java'da, diğer programlama dillerinden farklı olarak, JVM ve özellikle Çöp Toplayıcı, programcının ihtiyaç duymaması için bellek tahsisini yönetme rolüne sahiptir. Diğer programlama dillerinde, örneğin C'de, programcının kodunda belleği tahsis eden ve birçok sızıntı oluşturma potansiyeli olan doğrudan belleğe erişimi vardır.
+Java Bellek Yapısı:
+JVM, bir programın yürütülmesi sırasında kullanılan çeşitli çalışma zamanı veri alanlarını tanımlar. Bu alanlardan bazıları JVM tarafından oluşturulurken, bazıları bir programda kullanılan thread'ler tarafından oluşturulur. Ancak, JVM tarafından oluşturulan bellek alanı yalnızca JVM çıkış yaptığında yok edilir. Thread'in veri alanları örnekleme sırasında oluşturulur ve thread çıkış yaptığında yok edilir.
+
+!!! geeks den bak
+

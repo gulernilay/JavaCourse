@@ -1,0 +1,15 @@
+
+---------------------------------------------------------------------------------------------
+Public Access Modifier	/ Private Access Modifier	 /      Protected access modifier	/ Package access modifier
+This modifier is applicable for both top-level classes and interfaces. /	This modifier is not applicable for both top-level classes and interfaces./	This modifier is not applicable for both top-level classes and interfaces.	/This modifier is applicable for both top-level classes and interfaces.
+Public members can be accessed from the child class of the same package./	Private members cannot be accessed from the child class of the same package./	Protected members can be accessed anywhere from the same package and only by child classes outside the package.	Package members can be accessed from the child class of the same package.
+Public member can be accessed from non-child classes of the same package./	Private members cannot be accessed from non-child classes of the same package./	Protected member can be accessed from non-child classes of the same package./	Package member can be accessed from non-child class of the same package.
+Public members can be accessed from the child class of outside package./	Private members cannot be accessed from the child class of outside package./	Protected members can be accessed from the child class of the outside package, but we should use child reference only. /	Package members cannot be accessed from the child class of outside package.
+Public members can be accessed from non-child class of outside package./	Private members cannot be accessed from non-child class of outside package.	/Protected members cannot be accessed from the non-child class of outside package./	Package members cannot be accessed from non-child class of outside package.
+Public modifier is the most accessible modifier among all modifiers./	Private modifier is the most restricted modifier among all modifiers./	Protected modifier is more accessible than the package and private modifier but less accessible than public modifier./	Package modifier is more restricted than the public and protected modifier but less restricted than the private modifier.
+-------------------------------------------------------------------------------------------------------------------
+Modifiers: They are used to control access mechanisms and also provide information about class functionalities to JVM. They are divided into two categories namely:
+
+           Access modifiers (private, default , protected ,public)
+           Non-access modifiers(transient,native,final ,static, abstract ,synchronized,volatile) :In java, we have 7 non-access modifiers. They are used with classes, methods, variables, constructors, etc to provide information about their behavior to JVM.
+

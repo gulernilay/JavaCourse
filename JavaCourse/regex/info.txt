@@ -1,0 +1,9 @@
+Regular Expressions or Regex (in short) in Java is an API for defining String patterns that can be used for searching, manipulating, and editing a string in Java.
+Email validation and passwords are a few areas of strings where Regex is widely used to define the constraints.
+Regular Expressions in Java are provided under java.util.regex package. This consists of 3 classes and 1 interface.
+The java.util.regex package primarily consists of the following three classes :
+                                                                               Pattern Class :Used for defining patterns
+                                                                               Matcher Class :Used for performing match operations on text using patterns
+                                                                               PatternSyntaxException Class :Used for indicating syntax error in a regular expression pattern
+                                                                               MatchResult Interface :Used for representing the result of a match operation
+

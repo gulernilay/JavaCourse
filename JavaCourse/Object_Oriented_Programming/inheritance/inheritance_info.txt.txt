@@ -1,0 +1,32 @@
+In Java, constructors are special methods used to initialize objects. When you create a new instance of a class, a constructor is called to set up the initial state of the object. 
+Here's a breakdown of the concepts you mentioned:
+
+Default Constructor: If you don't explicitly define any constructor in your class, Java automatically provides a default constructor. This default constructor is a no-argument constructor (i.e., it doesn't take any parameters) and performs no specific actions or initializations. It simply creates an instance of the class.
+Parameterized Constructor: If you want to initialize your object with specific values at the time of creation, you can define a parameterized constructor. This constructor takes parameters and uses them to initialize the object's attributes.
+
+Constructor Inheritance: In Java, constructors are not inherited in the same way as other methods. However, when you create an instance of a subclass, the constructor of its superclass is automatically called first. This ensures that the superclass part of the object is properly initialized before the subclass's constructor executes.
+If the superclass has a no-argument constructor (whether it's the default or an explicitly defined one), it is automatically invoked by the subclass's constructor.
+If the superclass only has parameterized constructors, the subclass's constructor must explicitly call one of them using the super keyword.
+
+A class can extend another class and can implement one and more than one Java interface.
+An inteface can implements more than 1 interfaces.
+
+Interface inheritance: An Interface can extend another interface.interface_inheritance
+
+Inheritance is inheriting the properties of the parent class into the child class.
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class.
+You can also add new methods and fields in your current class.
+Inheritance represents the IS-A relationship which is also known as the parent-child relationship.
+
+
+class A- ) implements interfaceA -) extends interaceB
+Java supports three types of inheritance in Java: single-level, multilevel, and hierarchical inheritance in the case of classes to avoid ambiguity.
+In Java programming, multiple and hybrid inheritance is supported through the interface only.
+
+
+
+class A extends class B implements interface1,interface2 // multiple interface can be inherited, but only 1 class can be inherited.
+
+
+

@@ -1,0 +1,175 @@
+Java System.out.println() is used to print an argument that is passed to it.
+
+Parts of System.out.println() : 
+  The statement can be broken into 3 parts which can be understood separately:
+  System: It is a final class defined in the java.lang package.
+  out: This is an instance of PrintStream type, which is a public and static member field of the System class.
+  println(): As all instances of the PrintStream class have a public method println(), we can invoke the same on out as well. This is an upgraded version of print(). It prints any argument passed to it and adds a new line to the output. We can assume that System.out represents the Standard Output Stream.
+
+
+
+Just like System.out, Java provides us with two other standard or default input-output streams:
+  System.in: This is the standard input stream that is used to read characters from the keyboard or any other standard input device. Example:
+        InputStreamReader inp = new InputStreamReader(System.in);
+  System.err: This is the standard error stream that is used to output all the error data that a program might throw, on a computer screen or any standard output device.
+        System.err.print("Error");
+As we know, Method Overloading in Java allows different methods to have the same name, but different signatures or parameters where each signature can differ by the number of input parameters or type of input parameters or both. From the use of println() we observed that it is a single method of PrintStream class that allows the users to print various types of elements by accepting different type and number of parameters.
+
+
+
+
+Difference bw System.out.print() and System.out.println() :
+System.out.print() 
+This method only works with argument, otherwise it is a syntax error.
+the cursor remains at the end of the text at the console.
+This method prints the text on the console and the cursor remains at the end of the text at the console. The next printing takes place from just here. This method must take atleast one parameter else it will throw an error.
+
+System.out.println() : println() is passed to the server’s console where kernel time is required to execute the task. Kernel time refers to the CPU time. Since println() is a synchronized method, so when multiple threads are passed could lead to the low-performance issue. System.out.println() is a slow operation as it incurs heavy overhead on the machine compared to most IO operations. 
+It can work without arguments.
+the cursor remains at the start of the next line at the console.
+This method prints the text on the console and the cursor remains at the start of the next line at the console. The next printing takes place from the next line. This method may or may not take any parameter.
+
+
+// using print() 
+        // all are printed in the 
+        // same line 
+        System.out.print("GfG! "); 
+        System.out.print("GfG! "); 
+        System.out.print("GfG! "); 
+
+// using println() 
+        // all are printed in the 
+        // different line 
+        System.out.println("GfG! "); 
+        System.out.println("GfG! "); 
+        System.out.println("GfG! "); 
+
+
+System.out.printf() : 
+For Number Formatting : The number itself includes Integer, Long, etc. The formatting Specifier used is %d.
+    The number itself includes Integer, Long, etc. The formatting Specifier used is %d.
+    int a=10000; 
+          System.out.printf("%,d%n",a);  //10,000
+
+Formatting Decimal Numbers : Decimal Number Formatting can be done using print() and format specifier %f .
+     // declaring double 
+        double a = 3.14159265359; 
+        // Printing Double Value with 
+        // different Formatting 
+        System.out.printf("%f\n", a);  3.141593 
+        System.out.printf("%5.3f\n", a);  3.142 
+        System.out.printf("%5.2f\n", a);   3.14 
+
+For Boolean Formatting : Boolean Formatting can be done using printf and ( ‘%b’ or ‘%B’ ) depending upon the result needed.
+       int a = 10; 
+        Boolean b = true, c = false; 
+        Integer d = null; 
+        // Fromatting Done using printf 
+        System.out.printf("%b\n", a);  true
+        System.out.printf("%B\n", b);  TRUE
+        System.out.printf("%b\n", c);  false
+        System.out.printf("%B\n", d);  FALSE
+
+For String Formatting : String Formatting requires the knowledge of Strings and format specifier used ‘%s’ and ‘%S’.
+        String str = "geeksforgeeks"; 
+        // Formatting from lowercase to 
+        // Uppercase 
+        System.out.printf("%s \n", str);  geeksforgeeks  
+        System.out.printf("%S \n", str);  GEEKSFORGEEKS 
+        str = "GFG"; 
+        // Vice-versa not possible 
+        System.out.printf("%S \n", str);  GFG 
+        System.out.printf("%s \n", str);  GFG 
+
+For Char Formatting :Char Formatting is easy to understand as it need printf() and Charracter format specifier used are ‘%c’ and ‘%C’.
+        char c = 'g'; 
+        // Formatting Done 
+        System.out.printf("%c\n", c); g
+        // Converting into Uppercase 
+        System.out.printf("%C\n", c); G
+
+For Date and Time Formatting : Formatting of Date and Time is not as easy as the data-type used above. It uses more than simple format specifier knowledge can be observed in the example mentioned below. 
+import java.io.*; 
+import java.util.*; 
+  
+// Driver Class 
+class GFG { 
+    // main function 
+    public static void main(String[] args) 
+    { 
+        Date time = new Date(); 
+  
+        System.out.printf("Current Time: %tT\n", time); 
+  
+        // Another Method with all of them Hour 
+        // minutes and seconds seperated 
+        System.out.printf("Hours: %tH  Minutes: %tM Seconds: %tS\n",  
+                          time,time, time); 
+  
+        // Another Method to print the time 
+        // Followed by am/pm , time in milliseconds 
+        // nanoseconds and time-zone offset 
+        System.out.printf("%1$tH:%1$tM:%1$tS %1$tp %1$tL %1$tN %1$tz %n", 
+            time); 
+    } 
+}
+
+
+
+
+
+// Java program to demonstrate working of SimpleDateFormat 
+import java.text.ParseException; 
+import java.text.SimpleDateFormat; 
+import java.util.Date; 
+  
+// Driver Class 
+class Formatter3 { 
+    // main function 
+    public static void main(String args[]) 
+        throws ParseException 
+    { 
+        // Formatting as per given pattern in the argument 
+        SimpleDateFormat ft 
+            = new SimpleDateFormat("dd-MM-yyyy"); 
+        
+        String str = ft.format(new Date()); 
+        System.out.println("Formatted Date : " + str); 
+  
+        // parsing a given String 
+        str = "02/18/1995"; 
+        ft = new SimpleDateFormat("MM/dd/yyyy"); 
+        Date date = ft.parse(str); 
+  
+        // this will print the date as per parsed string 
+        System.out.println("Parsed Date : " + date); 
+    } 
+}
+Formatted Date : 24-01-2022
+Parsed Date : Sat Feb 18 00:00:00 UTC 1995
+
+
+
+
+
+
+
+!!!!!!!!! nextInt() metodu bir tamsayı aldıktan sonra satır sonu karakterini (newline) tüketmez. Bu, nextLine() metodunun çağrıldığında sadece satır sonu karakterini okuyup boş bir metin döndürmesine neden olur.
+int pop ;
+System.out.print(pop=x.nextInt());
+x.nextLine();
+String word;
+System.out.println(word =x.nextLine());
+x.close();
+
+
+
+
+
+
+
+
+
+
+
+
