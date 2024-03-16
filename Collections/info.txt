@@ -1,2 +1,0 @@
-Java Collections Framework, veri gruplarını depolamak ve işlemek için kullanılan bir dizi sınıf ve arabirimden oluşur.
-Temel Collection tipleri Listeler, Kümeler, Haritalar ve Kuyruklar'dır. İşte her biri ve onlara ait bazı örnekler:
