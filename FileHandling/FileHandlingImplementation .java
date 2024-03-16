@@ -1,7 +1,10 @@
 package FileHandling;
 import java.io.*;
 // geeksfor geeks bak     - IO ve File Handling bak
-public class Main {
+
+
+class FileHandlingImplementation {
+
     public static void main(String[] args) {
         File myfile = new File("niloya.txt");
         File myfile2 = new File("C:\\Users\\nilay\\Desktop\\JavaCourse\\JavaCourse\\FileHandling\\info.txt");

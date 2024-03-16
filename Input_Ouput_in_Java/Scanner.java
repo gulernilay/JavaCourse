@@ -5,7 +5,8 @@ There are two ways by which we can take Java input from the user or from a file
   Scanner Class
 
 
-1. BufferedReader is a very basic way to read the input generally used to read the stream of characters. It gives an edge over Scanner as it is faster than Scanner because Scanner does lots of post-processing for parsing the input; as seen in nextInt(), nextFloat()
+1. BufferedReader is a very basic way to read the input generally used to read the stream of characters.
+It gives an edge over Scanner as it is faster than Scanner because Scanner does lots of post-processing for parsing the input; as seen in nextInt(), nextFloat()
 BufferedReader is more flexible as we can specify the size of stream input to be read. (In general, it is there that BufferedReader reads larger input than Scanner)
 These two factors come into play when we are reading larger input. In general, the Scanner Class serves the input.
 BufferedReader is preferred as it is synchronized. While dealing with multiple threads it is preferred.
@@ -21,7 +22,8 @@ This is the Java classical method to take input, Introduced in JDK1.0. This meth
  
 2. In Java, Scanner is a class in java.util package used for obtaining the input of the primitive types like int, double, etc. and strings.
 nextBoolean(),-nextDouble() ,nextByte(),  nextFloat(),   nextLong(), nextShort()  
-This is probably the most preferred method to take input. The main purpose of the Scanner class is to parse primitive types and strings using regular expressions, however, it is also can be used to read input from the user in the command line. 
+This is probably the most preferred method to take input. The main purpose of the Scanner class is to parse primitive types and strings using regular expressions,
+however, it is also can be used to read input from the user in the command line.
 Convenient methods for parsing primitives (nextInt(), nextFloat(), …) from the tokenized input.
 Regular expressions can be used to find tokens.
 The reading methods are not synchronized   
